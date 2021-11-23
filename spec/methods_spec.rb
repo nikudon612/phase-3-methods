@@ -9,6 +9,8 @@ describe '#greet_programmer' do
   
 end
 
+
+
 describe '#greet' do
 
   it 'outputs a string "Hello, Naureen!" when called with "Naureen"' do
@@ -20,6 +22,9 @@ describe '#greet' do
   end
 
 end
+
+
+
 
 describe '#greet_with_default' do
 
@@ -52,3 +57,36 @@ describe '#halve' do
   end
 
 end
+
+
+def greet_programmer
+  puts "Hello, programmer!"
+end
+
+greet_programmer
+
+def greet(name)
+  puts "Hello, #{name}!"
+end
+
+greet "Jimmy"
+
+def greet_with_default(name="programmer")
+  puts "Hello, #{name}!"
+end
+
+greet_with_default
+
+def add(num1, num2)
+  num1 + num2
+end
+add(2, 2)
+
+def halve(num1)
+  if num1.class != integer
+    return nil
+  end
+
+    num1 / 2
+end
+halve(4)
